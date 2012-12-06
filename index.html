@@ -2,16 +2,68 @@
 <head>
   <title>Panel Slider</title>
 <link type="text/css" rel="stylesheet" href="style.css" />
+<!-- <link type="text/css" rel="stylesheet" href="tabs.css" /> -->
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="slider.js"></script>
+<script type="text/javascript" src="tabs.js"></script>
 
 <style type="text/css">
+  .outerTab {
+  height: 80px;
+  width: 1px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
   
+  
+  border-left:17px solid white;
+  border-top: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  
+  }
+
+  .innerTab {
+  position: relative;
+  z-index: 1;
+  
+  height: 78px;
+  width: 1px;
+  display: block;
+  
+  border-left: 16px solid black;
+  border-top: 17px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 17px solid transparent;
+  
+  top: -16px;
+  left: -17px;
+  }
+
+  #tabGroup {
+    display: inline-block;
+    top: 20px;
+    position: relative;
+  }
+
+  #thirdTab {
+    top: -18px;
+    position:  relative;
+  }
+
+  #halfTab {
+    position: relative;
+  }
+
+  
+
+
 </style>
 
 <script type="text/javascript">
+
 
  
 
@@ -27,12 +79,21 @@
 <div id="wrapper">
   <div class="nav">
     <span id="homeTab" class="sliderTabs">Home</span>
-    <span id="halfTab" class="sliderTabs">Half-Pane</span>
-    <span id="thirdTab" class="sliderTabs">Third-Pane</span>
+    
   </div> <!-- END navPane Div -->
   <div id="bodyPane">
     <div id="main">
-      Main Div
+      <div id="tabGroup">
+
+        <div id="halfTab" class="outerTab">
+          <div class="innerTab">
+          </div>
+        </div>
+        <div id="thirdTab" class="outerTab">
+          <div class="innerTab">
+          </div>
+        </div>
+      </div>
     </div>
     <div id="halfSlider">
       One-Half Slider

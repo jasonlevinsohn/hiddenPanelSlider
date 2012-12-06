@@ -17,7 +17,7 @@
     color             : #FFF;
     height            : 300px;
     width             : 410px;
-    background-color  : #272822;
+    background-color  : #A5BFDD;
     position          : absolute;
     display           : inline-block;
     z-index           : 3;
@@ -33,7 +33,7 @@
     height            : 300px;
     width             : 400px;
     position          : absolute;
-    background-color  : #353f50;
+    background-color  : #505050;
     z-index           : 2;
 }
 #thirdSlider {
@@ -48,7 +48,4 @@
     z-index           : 1;
 }
 
-* {
- font-family      : Georgia; 
- background-color  : #3F3F3F;
-}
+

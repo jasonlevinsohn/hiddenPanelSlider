@@ -1,0 +1,40 @@
+
+.tabs {
+  height: 80px;
+  width: 1px;
+  postion: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: #272822;
+
+  border-left:32px solid grey;
+  border-top: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  
+}
+
+.tabs:before {
+  content: "";
+  position: relative;
+  z-index: 1;
+  
+  height: 78px;
+  width: 1px;
+  display: block;
+  
+  border-left: 31px solid black;
+  border-top: 18px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 18px solid transparent;
+  
+  top: -17px;
+  left: -32px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,325 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"collapse",
+				"collapseSidebar2"
+			],
+			[
+				"co",
+				"collapseSideBar"
+			],
+			[
+				"fs-",
+				"fs-display-fields"
+			],
+			[
+				"app",
+				"applyUndo"
+			],
+			[
+				"undo",
+				"undo-template"
+			],
+			[
+				"to",
+				"toEqual"
+			],
+			[
+				"BAck",
+				"BackboneTunes"
+			],
+			[
+				"Lib",
+				"LibraryAlbumView"
+			],
+			[
+				"border-bo",
+				"border-bottom-right-radius"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"reco",
+				"reconnect"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<html>\n<head>\n  <title>Panel Slider</title>\n<link type=\"text/css\" rel=\"stylesheet\" href=\"style.css\" />\n<link type=\"text/css\" rel=\"stylesheet\" href=\"tabs.css\" />\n\n\n<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js\"></script>\n<script type=\"text/javascript\" src=\"script.js\"></script>\n<script type=\"text/javascript\" src=\"tabs.js\"></script>\n\n<style type=\"text/css\">\n  \n</style>\n\n<script type=\"text/javascript\">\n\n \n\n</script>\n\n\n\n</head>\n\n<body>\n\n\n<div id=\"wrapper\">\n  <div class=\"nav\">\n    <span id=\"homeTab\" class=\"sliderTabs\">Home</span>\n    <span id=\"halfTab\" class=\"sliderTabs\">Half-Pane</span>\n    <span id=\"thirdTab\" class=\"sliderTabs\">Third-Pane</span>\n  </div> <!-- END navPane Div -->\n  <div id=\"bodyPane\">\n    <div id=\"main\">\n      <div id=\"halfTab\" class=\"tabs\"></div>\n      <div id=\"thirdTab\" class=\"tabs\"></div>\n    </div>\n    <div id=\"halfSlider\">\n      One-Half Slider\n    </div>\n    <div id=\"thirdSlider\">\n      One-Third Slider\n    </div>\n  </div> <!-- END bodyPane Div -->\n</div>\n  </body>\n\n\n\n</html>\n\n",
+			"file": "index.html",
+			"file_size": 986,
+			"file_write_time": 1354741941000000,
+			"settings":
+			{
+				"buffer_size": 1041,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "script.js",
+			"settings":
+			{
+				"buffer_size": 3335,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tabs.css",
+			"settings":
+			{
+				"buffer_size": 582,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jlevinsohn/Downloads/RoundOutTabs/index.html",
+		"/Users/jlevinsohn/Projects/dailyjs-backbone/test/app.test.js",
+		"/Users/jlevinsohn/Projects/dailyjs-backbone/test/setup.js",
+		"/Users/jlevinsohn/Projects/dailyjs-backbone/app/js/main.js",
+		"/Users/jlevinsohn/Projects/dailyjs-backbone/server.js",
+		"/Users/jlevinsohn/Projects/dailyjs-backbone/package.json",
+		"/Users/jlevinsohn/Projects/dailyjs-backbone/app/index.html",
+		"/Users/jlevinsohn/Projects/dailyjs-backbone/app/js/app.js",
+		"/Users/jlevinsohn/Downloads/FoldOutPopup 2/index.html",
+		"/Users/jlevinsohn/Downloads/KaceKilgoreHW16/index.html",
+		"/Users/jlevinsohn/Projects/bonesaw/apps/bonesaw/htdocs/img/markers/single.png",
+		"/Users/jlevinsohn/Projects/backbone-tutorial-code-base/backbone-errors/app/coffeescripts/time_log.coffee",
+		"/Users/jlevinsohn/Dropbox/Part 1/peepcode-060-backbone-i-1-code/9-final/test-js/spec/TunesSpec.js",
+		"/Users/jlevinsohn/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jlevinsohn/Projects/backbone-tuner/lib/server.rb",
+		"/Users/jlevinsohn/Projects/elguapo/elguapo/static/js/views.coffee",
+		"/Users/jlevinsohn/Projects/elguapo/elguapo/static/js/app.coffee",
+		"/Users/jlevinsohn/Projects/elguapo/elguapo/static/js/compiled/views.js",
+		"/Users/jlevinsohn/Projects/elguapo/elguapo/static/js/geolayer.coffee",
+		"/Users/jlevinsohn/Projects/elguapo/elguapo/templates/index.html",
+		"/Users/jlevinsohn/Projects/CoffeeScript.tmLanguage",
+		"/Users/jlevinsohn/Desktop/Jason/intro.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ds-text",
+			"undoItems",
+			"findItems",
+			"fs",
+			"10px",
+			"MainSocket",
+			"window",
+			"MainSocket",
+			"Blipper",
+			"MainSocket",
+			"socket"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								362,
+								362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "script.js",
+					"settings":
+					{
+						"buffer_size": 3335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tabs.css",
+					"settings":
+					{
+						"buffer_size": 582,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 419.0,
+	"status_bar_visible": true
+}
