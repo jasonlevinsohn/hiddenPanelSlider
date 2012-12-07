@@ -1,0 +1,30 @@
+#settingsDemo {
+    width            : 580px;
+    height           : 600px;
+    border           : 2px solid #000;
+    margin           : 50px;
+    border-radius    : 10px;
+    background-color : #fff;
+    padding-left     : 20px;
+    font-family      : Georgia;
+    color: black; 
+    text-align: center;
+
+}
+
+
+
+#parametersDemo {
+    width            : 340px;
+    height           : 600px;
+    border           : 2px solid #000;
+    margin           : 50px;
+    border-radius    : 10px;
+    background-color : #fff;
+    padding-left     : 20px;
+    font-family      : Georgia;
+    color: black; 
+    text-align: center;
+
+}
+

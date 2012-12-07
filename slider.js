@@ -1,11 +1,24 @@
-$(document).ready( function() {
+
+
+$(function() {
   
+  var halfTab = $('#halfTab');
+  var innerHalf = $('#halfTab div.innerTab');
+  var thirdTab = $('#thirdTab');
+  var innerThird = $('#thirdTab div.innerTab');
+  var halfArrow = $('#halfArrow');
+  var thirdArrow = $('#thirdArrow');
+
+  //Get Tab dimensions
+  var halfBorderLeft    = halfTab.css('border-left-width');
+  var innerHalfBorderLeft = innerHalf.css('border-left-width');
+  var halfLeftPos     = innerHalf.css('left');
   
   //?????????Why can we define main variable without the window and not a boolean?????????????
   //?????????Is it because it is a reference and primative????????????
   window.halfOpen = false;
   window.thirdOpen = false;
-  window.leftToCloseToo = 5;
+  window.leftToCloseToo = 0;
 
 
   var main = $('#main');
@@ -17,9 +30,44 @@ $(document).ready( function() {
   third.hide();
 
   //Resize all the boxes
+
+  $(window).on('resize', function() {
+    resizeBox(main);
+    resizeBox(half);
+    resizeBox(third);
+  });
+  
   resizeBox(main);
   resizeBox(half);
   resizeBox(third);
+
+
+  halfTab.hover( 
+    function() {
+        toggleTab(halfTab, thirdTab, innerHalf, halfArrow, true);
+    },
+    function() {
+      if(!window.halfOpen){
+        toggleTab(halfTab, thirdTab, innerHalf, halfArrow, false);
+      }
+    }
+  );
+
+ 
+  thirdTab.hover( 
+    function() {
+      toggleTab(thirdTab, halfTab, innerThird, thirdArrow, true);
+    }, 
+
+    function() {
+      if(!window.thirdOpen) {
+        toggleTab(thirdTab, halfTab, innerThird, thirdArrow, false);
+      }
+      
+    }
+  );
+
+
 
   /*
   * Make all the boxes the size of the browser window
@@ -27,8 +75,8 @@ $(document).ready( function() {
   * box = the box to be resized
   */
   function resizeBox(box) {
-    var h = $(window).height() - 10;
-    var w = $(window).width() - 10;
+    var h = $(window).height() - 0;
+    var w = $(window).width() - 0;
     box.height(h);
     box.width(w);
   }
@@ -46,6 +94,31 @@ $(document).ready( function() {
     } else {
       b.css('box-shadow', '0px 0px 0px 0px #000');
     }
+  }
+
+
+  function toggleTab(thisTab, otherTab, innerTab, icon, toggle) {
+    
+      if(toggle) {
+          thisTab.css('z-index', '2');
+          otherTab.css('z-index', '1');
+          icon.html('&#9664;');
+          icon.animate({'left': '-25px'}, 100);
+          thisTab.animate({'border-left-width': '32px'}, 100);
+          innerTab.animate({
+            'border-left-width': '30px',
+            'left': '-32px'
+          }, 100);
+      } else {
+          thisTab.animate({'border-left-width': halfBorderLeft}, 100);
+          icon.html('&#x25B6;');
+          icon.animate({'left': '-15px'}, 100);
+          innerTab.animate({
+            'border-left-width': innerHalfBorderLeft,
+            'left': halfLeftPos
+          }, 100);
+        
+      }
   }
 
 
@@ -74,6 +147,9 @@ $(document).ready( function() {
           half.hide();
           third.show();
           main.animate({'left': thirdWindowWidth}, 'slow');
+          toggleTab(thirdTab, halfTab, innerThird, thirdArrow, true);
+          toggleTab(halfTab, thirdTab, innerHalf, halfArrow, false);
+          console.log("Opening the third tab, closing the second??");
         });
       } else {
         third.show();
@@ -115,12 +191,19 @@ $(document).ready( function() {
         window.thirdOpen = false;
         main.animate({'left': window.leftToCloseToo}, 'slow', function() {
           third.hide();
-          half.show()
+          half.show();
           main.animate({'left':  halfWindowWidth}, 'slow');
-        })
+          toggleTab(thirdTab, halfTab, innerThird, thirdArrow, false);
+          toggleTab(halfTab, thirdTab, innerHalf, halfArrow, true);
+             
+          
+        });
       } else {
-        half.show()
-        main.animate({'left':  halfWindowWidth}, 'slow');
+        half.show();
+        main.animate({'left':  halfWindowWidth}, 'slow', function() {
+           
+        });
+        
       }
       
     } else {
@@ -129,6 +212,7 @@ $(document).ready( function() {
       main.animate({'left': window.leftToCloseToo}, 'slow', function() {
         toggleBox(window.halfOpen, main);
         half.hide();
+
       });
     }
   });

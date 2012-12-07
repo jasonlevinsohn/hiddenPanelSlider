@@ -12,7 +12,6 @@
 
 #main {
     margin            : 0px;
-    padding-left      : 5px;
     border            : 1px solid #000;
     color             : #FFF;
     height            : 300px;
@@ -21,6 +20,7 @@
     position          : absolute;
     display           : inline-block;
     z-index           : 3;
+    left              : -5px; 
   
   
   
@@ -35,6 +35,7 @@
     position          : absolute;
     background-color  : #505050;
     z-index           : 2;
+    left              : -5px;
 }
 #thirdSlider {
     margin            : 0px;
@@ -46,6 +47,7 @@
     position          : absolute;
     background-color  : #55acdb;
     z-index           : 1;
+    left              : -5px;
 }
 
 
