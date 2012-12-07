@@ -1,0 +1,4 @@
+hiddenPanelSlider
+=================
+
+Hidden Panel Slider
